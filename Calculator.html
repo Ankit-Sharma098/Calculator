@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+       <title>Calculator</title>
+       <link rel="Icon" type="image/jpg" href="img.png">
+       <link rel="stylesheet" href="Calculator.css">
+    </head>
+    <body>
+        <b>Calculator</b>
+    
+        <p class="js-result-value"></p>
+        
+      <p>
+        <button class="js-value-1" onclick="displayCalculation('1')"> 1 </button>
+        <button  onclick="displayCalculation('2')"> 2 </button>
+        <button  onclick="displayCalculation('3')"> 3 </button>
+        <button class="operand-color"  onclick="displayCalculation('+')"> + </button>
+      </p>
+      <p>
+        <button  onclick="displayCalculation('4')"> 4 </button>
+        <button  onclick="displayCalculation('5')"> 5 </button>
+        <button  onclick="displayCalculation('6')"> 6 </button>
+        <button class="operand-color"  onclick="displayCalculation('-')"> - </button>
+      </p>
+      <p>
+        <button  onclick="displayCalculation('7')"> 7 </button>
+        <button  onclick="displayCalculation('8')"> 8 </button>
+        <button  onclick="displayCalculation('9')"> 9 </button>
+        <button class="operand-color"  onclick="displayCalculation('*')"> * </button>
+      </p>
+      <p>
+        <button  onclick="displayCalculation('0')"> 0 </button>
+        <button  onclick="displayCalculation('.')"> . </button>
+        <button  onclick="
+        Calculation=eval(Calculation);
+        displayCalculation();
+
+        localStorage.setItem('VALUES',Calculation);
+        
+        "> = </button>
+        <button class="operand-color"  onclick="displayCalculation('/')"> / </button>
+      </p>
+      <p>
+        <button onclick="clearResult()" id="js-clear"> Clear </button>
+      </p>
+   <script src="Calculator.js"></script>
+    </body>
+</html>
